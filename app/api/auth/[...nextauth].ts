@@ -16,6 +16,7 @@
 // filepath: f:\WEB DEV\FUTURE_INTERNS_INTERNSHIP\shopease\app\api\auth\[...nextauth].ts
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
+import { Account, Profile, User } from "next-auth";
 
 export const authOptions = {
   providers: [
