@@ -60,7 +60,8 @@
 
 // export default NextAuth(authOptions);
 
-import type { NextAuthOptions } from "next-auth";
+import NextAuth, { NextAuthOptions } from "next-auth";
+import GoogleProvider from "next-auth/providers/google";
 import type { Account, Profile, User } from "next-auth";
 
 export const authOptions: NextAuthOptions = {
