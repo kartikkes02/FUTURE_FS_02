@@ -60,10 +60,8 @@
 
 // export default NextAuth(authOptions);
 
-import NextAuth, { NextAuthOptions } from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
-import { Account, Profile, Session, User } from "next-auth";
-import { JWT } from "next-auth/jwt";
+import type { NextAuthOptions } from "next-auth";
+import type { Account, Profile, User } from "next-auth";
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -72,17 +70,13 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
       authorization: {
         params: {
-          prompt: "select_account", // Ensures account selection every time
+          prompt: "select_account",
         },
       },
     }),
   ],
   callbacks: {
-    async signIn({
-      user,
-      account,
-      profile,
-    }: {
+    async signIn({ user, account, profile }: {
       user: User;
       account: Account | null;
       profile?: Profile;
@@ -90,26 +84,10 @@ export const authOptions: NextAuthOptions = {
       console.log("User signed in:", user);
       return true;
     },
-
-    async session({
-      session,
-      token,
-    }: {
-      session: Session;
-      token: JWT;
-    }) {
+    async session({ session, token }) {
       return session;
     },
-
-    async jwt({
-      token,
-      user,
-      account,
-    }: {
-      token: JWT;
-      user?: User;
-      account?: Account | null;
-    }) {
+    async jwt({ token, user }) {
       if (user) {
         token.id = user.id;
       }
@@ -117,8 +95,8 @@ export const authOptions: NextAuthOptions = {
     },
   },
   pages: {
-    signIn: "/login",
-    error: "/login",
+    signIn: '/login',
+    error: '/login',
   },
   session: {
     strategy: "jwt",
