@@ -1,3 +1,72 @@
+# 🛍️ ShopEase - E-Commerce Platform
+
+![ShopEase Screenshot](https://shop-ease-self-omega.vercel.app/opengraph-image.png)
+
+A modern e-commerce platform built with Next.js, providing seamless shopping experience.
+
+🌐 **Live Demo**: [https://shop-ease-self-omega.vercel.app/](https://shop-ease-self-omega.vercel.app/)
+
+## 🚀 Features
+- 🔍 Product browsing and search functionality
+- 🛒 Shopping cart management
+- 💳 Secure checkout process
+- 📱 Responsive design for all devices
+- ⚡ Fast performance with Next.js
+- 🔄 Real-time inventory updates
+- 🔐 User authentication
+
+## 🛠️ Technologies Used
+- ⚛️ Next.js (React Framework)
+- 🔷 TypeScript
+- 🎨 Tailwind CSS
+- 🔥 Firebase (Authentication & Database)
+- 📦 Redux Toolkit (State Management)
+- 📈 Vercel (Hosting)
+
+## 📦 Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kartikkes02/FUTURE_FS_02.git
+   ```
+2. Navigate to project directory
+   ```bash
+   cd FUTURE_FS_02
+   ```
+3. Install dependencies:
+    ```bash
+   npm install
+   ```
+4. Create .env.local file with Firebase credentials.
+5. Run development server:
+   ```bash
+   npm run dev
+   ```
+📂 Project Structure
+   ```bash
+   FUTURE_FS_02/
+├── public/            # Static files
+├── src/
+│   ├── app/           # Next.js app router
+│   ├── components/    # React components
+│   ├── lib/           # Utility functions
+│   ├── store/         # Redux store
+│   └── styles/        # Global styles
+├── .gitignore
+├── next.config.js
+├── package.json
+└── README.md
+```
+
+🤝 Contributing
+🍴 Fork the project
+🌿 Create your feature branch
+💾 Commit your changes
+🚀 Push to the branch
+🔄 Open a Pull Request
+
+📄 License
+MIT License
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
