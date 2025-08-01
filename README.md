@@ -1,6 +1,6 @@
 # 🛍️ ShopEase - E-Commerce Platform
 
-![ShopEase Screenshot](ShopEase.jpg)
+![ShopEase Screenshot](./public/ShopEase.jpg)
 
 A modern e-commerce platform built with Next.js, providing seamless shopping experience.
 
