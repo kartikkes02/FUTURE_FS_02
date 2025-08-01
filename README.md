@@ -1,6 +1,6 @@
 # 🛍️ ShopEase - E-Commerce Platform
 
-![ShopEase Screenshot](https://shop-ease-self-omega.vercel.app/opengraph-image.png)
+![ShopEase Screenshot](ShopEase.jpg)
 
 A modern e-commerce platform built with Next.js, providing seamless shopping experience.
 
